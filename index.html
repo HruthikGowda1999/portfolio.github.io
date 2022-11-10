@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Of Hruthik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Hruthik K Y</span> </h1>
+            <p>Full Stack Developer</p>
+            <h1> from Karnataka</h1>
+            
+        </div>
+      </div>
+
+     </div>
+     <!---------------about-------------------->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my 2.JPG" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>Passion about web development and goal is to achieve a good position by doing satisfying work in the IT field, strongly focused to complete the tasks in fast faced environment.
+                        </p>
+                     
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Technologies</span><br> Front End Websites(HTML 5, CSS, JavaScript, bbotstrap)</li>
+                            <li><span>core Java</span> </li>
+                            <li><span>SQL (Structured Query Language)</span><br> DataBase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Learning Java Full Stack Development at Jspiders</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span> <br> BE in CSE (6.9 CGPA)) at Karavali Institute Of Technology</li>
+                            <li><span>2015 - 2017</span><br> PUC (62 %) at SVG's Vishwaprajna composite Pu College </li>
+                            <li><span>2005 - 2015</span><br> SSLC (78 %) at St Anne's Hgh School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--------------projects------------->
+
+
+            <div id="project"> 
+                <div class="container">
+                   <h1 class="sub-title" >Projects</h1> 
+                   <div class="work-list">
+                    <div class="work">
+                        <img src="images/phishing3.png" >
+                        <div class="layer">
+                            <h3>Phishing Website Detection</h3>
+                            <p>Now a days phishing Websites are becoming major problems,  The ML based phishing techniques depend on website functionalities to gather information that can help classify websites for detecting phishing sites. A crawler was developed that crawled 7900 URLs from AlexaRank portal and also employed Phishtank dataset to measure the efficiency of the proposed URL detector. Using the help of algorithms like SVM, XG Boost, Decision tree, Random Forest. A total of 7900 malicious URLS were detected using the proposed URL detector. It has achieved better accuracy and F1—score with limited amount of time.  </p>
+                            <!--------- <a href="#"><i class=" fas fa-external-link-alt"></i></a>------>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/dry bean3.png" >
+                        <div class="layer">
+                            <h3>Dry Bean Classification</h3>
+                            <p>Machine learning Classification problem to classify 7 types of dry beans based on morphological features only using different classifiers and a voting classifier. In this project different machine learning algorithms were used to classify the most well-known 7 types of beans in Turkey; Barbunya, Bombay, Cali, Dermason, Horoz, Seker and Sira, depending ONLY on dimension and shape features of bean varieties with no external discriminatory features. Multilayer Perceptrons, Decision Tree, Xgboost, SVM and Random Forest classifiers were trained and a final VotingClassifier is used resulting F1-score 0.956 on the training data, 0.935 on validation set and 0.938 on the final testing set.</p>
+                            <!------- <a href="#"><i class=" fas fa-external-link-alt"></i></a>---->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/adopt me dog.png" >
+                        <div class="layer">
+                            <h3>Furry Paw</h3>
+                            <p>This is my ongoing project, Basically it is a website to save abondand puppies in the streets. Using this websites if anyone see any puppies nearby they can add the details of puppies. Through the same interface or website other people can also see the details of puppies that was added by others, if they want they can adopt the puppies as well by getting the details of the puppy.  </p>
+                            <!--------- <a href="#"><i class=" fas fa-external-link-alt"></i></a>------>
+                        </div>
+                    </div>
+                   </div>
+                   <a href="#" class="btn">See More</a>
+                
+                </div>
+
+            </div>
+
+
+
+
+     <!--------------conatct------------------->
+     
+     
+     
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-at"></i>sonuhruthik@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7259575866</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/hruthik.sonu.5"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/_mr.hruthik_?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hruthik-k-y-79483a9b"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HruthikGowda1999"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                    <a href="images/Resume- HRUTHIK K Y.pdf"  download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-Right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><!-----<img src="">----->
+            <p>Copyright ©  belongs to Hruthik </p>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+     </script>
+     <script>
+      
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemeu.style.right="0";
+
+      }
+      function closemenu(){
+        sidemeu.style.right="-200px";
+
+      }
+
+
+     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaLQbaqKUn1tRqHC06sQEMr96m1ZTcVzMhmyK0udYWDWn9mvi2ZOISilG1CSrrUEPv/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function() {
+                   msg.innerHTML="" 
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
